@@ -18,9 +18,9 @@ function App() {
       <Navbar />
       <Routes>
 
-        <Route path="/" element={<LoginOrRegister />} />
-        <Route path="/wellcome" element={[<Layout />, <Wellcome />]} />
-        
+        <Route path="/loginOrRegister" element={<LoginOrRegister />} />
+        <Route path="/" element={[<Layout />, <Wellcome />]} />
+
         <Route element={<RequireAuth />}>
           
           <Route path="/leitoform" element={[<Layout />, <CreateLeitos />]} />
