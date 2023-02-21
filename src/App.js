@@ -19,10 +19,11 @@ function App() {
       <Routes>
 
         <Route path="/loginOrRegister" element={<LoginOrRegister />} />
-        <Route path="/" element={[<Layout />, <Wellcome />]} />
+
 
         <Route element={<RequireAuth />}>
-          
+      
+          <Route path="/" element={[<Layout />, <Wellcome />]} />
           <Route path="/leitoform" element={[<Layout />, <CreateLeitos />]} />
           <Route path="/leitoform-update/:id" element={[<Layout />, <UpdateLeito />]} />
           <Route path="/monitored-leitos" element={[<Layout />, <MonitoredEnvironmente />]} />
