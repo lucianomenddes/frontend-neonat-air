@@ -52,7 +52,7 @@ const SignInSideForm = () => {
       AuthserveceApi.login(data.email, data.password).then(
         () => {
           navigate("/wellcome");
-        
+          window.location.reload();
         },
         (error) => {
           const resMessage =
@@ -111,7 +111,7 @@ const SignInSideForm = () => {
 
         />
         <TextField
-        sx={{ mt: 3 }}
+          sx={{ mt: 3 }}
           required
           variant="standard"
           fullWidth

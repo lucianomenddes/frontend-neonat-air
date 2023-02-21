@@ -19,9 +19,9 @@ function App() {
       <Routes>
 
         <Route path="/" element={<LoginOrRegister />} />
-     
+
         <Route element={<RequireAuth />}>
-        <Route path="/wellcome" element={[<Layout />, <Wellcome/>]} />
+          <Route path="/wellcome" element={[<Layout />, <Wellcome />]} />
           <Route path="/leitoform" element={[<Layout />, <CreateLeitos />]} />
           <Route path="/leitoform-update/:id" element={[<Layout />, <UpdateLeito />]} />
           <Route path="/monitored-leitos" element={[<Layout />, <MonitoredEnvironmente />]} />
@@ -36,4 +36,3 @@ function App() {
 }
 
 export default App;
-/* */
